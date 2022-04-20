@@ -8,7 +8,7 @@ import { PalestrantesComponent } from './components/palestrantes/palestrantes.co
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './shared/nav/nav.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EventoService } from './services/evento.service';
 import { DateTimeFormatPipe } from './helpers/DateTimeFormat.pipe';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
@@ -41,7 +41,7 @@ import { RegistrationComponent } from './components/user/registration/registrati
     EventoListaComponent,
     UserComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +52,7 @@ import { RegistrationComponent } from './components/user/registration/registrati
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
     FormsModule,
+    ReactiveFormsModule,
     ModalModule.forRoot(),
     ToastrModule.forRoot({
       timeOut: 3000,

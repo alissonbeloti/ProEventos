@@ -1,9 +1,5 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
-import { Evento } from '../../models/Evento';
-import { EventoService } from '../../services/evento.service';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
-import { ToastrService } from 'ngx-toastr';
-import { NgxSpinnerService } from 'ngx-spinner';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-eventos',
@@ -12,8 +8,12 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class EventosComponent implements OnInit {
 
+  constructor() {
+
+  }
   ngOnInit(): void {
 
   }
+
 
 }
